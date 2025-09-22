@@ -34,7 +34,7 @@ def main():
             sys.exit(1)
         
         # Run with gunicorn
-        os.system(f"gunicorn --bind {args.host}:{args.port} --workers {args.workers} app:app.server")
+        os.system(f"gunicorn --bind {args.host}:{args.port} --workers {args.workers} app:server")
     else:
         # Development mode
         print("🛠️  Starting in development mode...")

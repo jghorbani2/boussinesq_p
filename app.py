@@ -18,6 +18,8 @@ from bouss import (
 
 app = Dash(__name__, suppress_callback_exceptions=True)
 app.title = "Boussinesq Strip Stress Analysis"
+# Expose WSGI server for gunicorn (e.g., app:server)
+server = app.server
 
 # Configure app for better JavaScript loading
 app.config.suppress_callback_exceptions = True
