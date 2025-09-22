@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160">
+  <line x1="10" y1="80" x2="390" y2="80" stroke="#111" stroke-width="2"/>
+  <rect x="140" y="60" width="120" height="20" fill="#e5f0ff" stroke="#2563eb" stroke-width="2"/>
+  <!-- Left triangle bottom-filled: base on ground (y=80) from 70 to 140, inner top at 140,60 -->
+  <polygon points="70,80 140,80 140,60" fill="#e5f0ff" stroke="#2563eb" stroke-width="2"/>
+  <!-- Right triangle bottom-filled: base on ground (y=80) from 260 to 350, inner top at 260,60 -->
+  <polygon points="350,80 260,80 260,60" fill="#e5f0ff" stroke="#2563eb" stroke-width="2"/>
+  <line x1="140" y1="50" x2="260" y2="50" stroke="#111" stroke-width="1"/>
+  <line x1="140" y1="46" x2="140" y2="54" stroke="#111" stroke-width="1"/>
+  <line x1="260" y1="46" x2="260" y2="54" stroke="#111" stroke-width="1"/>
+  <text x="200" y="45" text-anchor="middle" font-size="12" fill="#111">2b</text>
+  <line x1="70" y1="50" x2="140" y2="50" stroke="#111" stroke-width="1"/>
+  <line x1="70" y1="46" x2="70" y2="54" stroke="#111" stroke-width="1"/>
+  <line x1="140" y1="46" x2="140" y2="54" stroke="#111" stroke-width="1"/>
+  <text x="105" y="45" text-anchor="middle" font-size="12" fill="#111">a1</text>
+  <line x1="260" y1="50" x2="350" y2="50" stroke="#111" stroke-width="1"/>
+  <line x1="260" y1="46" x2="260" y2="54" stroke="#111" stroke-width="1"/>
+  <line x1="350" y1="46" x2="350" y2="54" stroke="#111" stroke-width="1"/>
+  <text x="305" y="45" text-anchor="middle" font-size="12" fill="#111">a2</text>
+  <line x1="200" y1="80" x2="330" y2="80" stroke="#6b7280" stroke-width="1"/>
+  <text x="335" y="84" font-size="12" fill="#6b7280">x</text>
+  <line x1="200" y1="80" x2="200" y2="120" stroke="#6b7280" stroke-width="1"/>
+  <text x="195" y="125" font-size="12" fill="#6b7280">z</text>
+  <circle cx="240" cy="110" r="3" fill="#ef4444"/>
+  <text x="248" y="114" font-size="12" fill="#ef4444">P(x,z)</text>
+</svg>
