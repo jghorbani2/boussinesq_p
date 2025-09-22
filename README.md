@@ -275,3 +275,26 @@ For questions, issues, or feature requests, please open an issue on the project 
 ---
 
 **Note**: This application is designed for educational and engineering analysis purposes. For critical structural design, always verify results with established methods and consult relevant design codes.
+
+## ☁️ Deploy to Google Cloud Run
+
+### Prerequisites
+- Google Cloud project with billing enabled
+- Google Cloud SDK installed and authenticated
+- Set your project and region:
+```bash
+gcloud config set project YOUR_PROJECT_ID
+gcloud config set run/region YOUR_REGION   # e.g., us-central1
+```
+
+### Build and Deploy
+```bash
+gcloud builds submit --tag gcr.io/$(gcloud config get-value project)/boussinesq-app
+gcloud run deploy boussinesq-app \
+  --image gcr.io/$(gcloud config get-value project)/boussinesq-app \
+  --platform managed \
+  --allow-unauthenticated \
+  --port 8080
+```
+
+The container runs `gunicorn app:server` and listens on `$PORT` (Cloud Run sets it). Cloud Run outputs the public URL on success.
